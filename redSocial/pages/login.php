@@ -1,3 +1,12 @@
+<?php
+/**
+ * Página de inicio de sesión
+ * 
+ * @author Fran Paredes
+ * @version 0.1
+ */
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +23,7 @@
         <form action="#" method="POST">
             <label for="User">Usuario o Correo electrónico:</label>
             <br>
-            <input type="text" id="User" value="Usuario o Correo electrónico">
+            <input type="text" id="User" value="Usuario o Correo">
             <br><br>
             <label for="Password">Contraseña:</label>
             <br>
