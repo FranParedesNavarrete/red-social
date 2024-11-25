@@ -14,12 +14,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/red-social/redSocial/CSS/style.css">
     <title>Inicio</title>
 </head>
 <body>
     <?php
-    include_once($_SERVER['DOCUMENT_ROOT'].'/includes/header.inc.php');
+    include_once($_SERVER['DOCUMENT_ROOT'].'/red-social/redSocial/includes/header.inc.php');
     ?>
 
 
@@ -27,7 +27,7 @@
 
 
     <?php
-    
+    include_once($_SERVER['DOCUMENT_ROOT'].'/red-social/redSocial/includes/footer.inc.php');
     ?>
 </body>
 </html>

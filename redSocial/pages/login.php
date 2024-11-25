@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/red-social/redSocial/CSS/style.css">
     <title>Login</title>
 </head>
 <div class="login">
 <body>
     <div class="form">
-        <a href="index.php"><img src="/images/logo.avif" alt="logo" height="50px"></a>
+        <a href="index.php"><img src="/red-social/redSocial/images/logo.avif" alt="logo" height="50px"></a>
         <br><br>
         <form action="#" method="POST">
             <label for="User">Usuario o Correo electrónico:</label>
