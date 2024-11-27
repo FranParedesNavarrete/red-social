@@ -17,17 +17,25 @@
     <link rel="stylesheet" href="/red-social/redSocial/CSS/style.css">
     <title>Inicio</title>
 </head>
-<body>
-    <?php
-    include_once($_SERVER['DOCUMENT_ROOT'].'/red-social/redSocial/includes/header.inc.php');
-    ?>
+<div class="content">
+    <body>
+        <?php
+        if (!isset($_COOKIE['login'])) {
+            header('Location: pages/login.php?login=signup&userState=new');
+        }
+
+        include_once($_SERVER['DOCUMENT_ROOT'].'/red-social/redSocial/includes/header.inc.php');
+        ?>
+        <div class="user-table">
+            
+        </div>
 
 
 
 
-
-    <?php
-    include_once($_SERVER['DOCUMENT_ROOT'].'/red-social/redSocial/includes/footer.inc.php');
-    ?>
-</body>
+        <?php
+        include_once($_SERVER['DOCUMENT_ROOT'].'/red-social/redSocial/includes/footer.inc.php');
+        ?>
+    </body>
+</div>
 </html>
