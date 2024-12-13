@@ -6,6 +6,7 @@
  * @version 1.0
  */
 
+require_once($_SERVER['DOCUMENT_ROOT'].'/red-social/redSocial/includes/session.inc.php');
 
 
 ?>
@@ -20,11 +21,12 @@
 <div class="content">
     <body>
         <?php
-        if (!isset($_COOKIE['login'])) {
+        if (!isset($_SESSION['user'])) {
+            
             header('Location: pages/login.php?login=signup&userState=new');
         }
 
-        include_once($_SERVER['DOCUMENT_ROOT'].'/red-social/redSocial/includes/header.inc.php');
+        require_once($_SERVER['DOCUMENT_ROOT'].'/red-social/redSocial/includes/header.inc.php');
         ?>
         <div class="user-table">
             
@@ -34,7 +36,7 @@
 
 
         <?php
-        include_once($_SERVER['DOCUMENT_ROOT'].'/red-social/redSocial/includes/footer.inc.php');
+        require_once($_SERVER['DOCUMENT_ROOT'].'/red-social/redSocial/includes/footer.inc.php');
         ?>
     </body>
 </div>
