@@ -5,7 +5,7 @@
  * @author Fran Paredes
  * @version 0.1
  */
-include_once($_SERVER['DOCUMENT_ROOT'].'/red-social/redSocial/includes/session.inc.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/red-social/redSocial/includes/session.inc.php');
 
 
 if (!empty($_GET)){
